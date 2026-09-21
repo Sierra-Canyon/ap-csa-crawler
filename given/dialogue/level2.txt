@@ -1,0 +1,39 @@
+// GIVEN. The conversation on level 2. Do not edit. Yours is my/dialogue.txt, and it uses the same format.
+
+NAME Sage
+BOSS Warden
+QUEST gold
+START 0 2 3 6
+
+LINE 0
+SAY I am building a shield, and I am 3 gold short.
+A I will find it. -> 1
+B Not my problem. -> -1
+
+LINE 1
+SAY Monsters carry gold. Come back with 3.
+NEXT -1
+GIVES start quest
+
+LINE 2
+SAY You do not have 3 gold yet.
+NEXT -1
+
+LINE 3
+SAY You have the gold! Will you trade it?
+A Here you go. -> 4
+B I will keep it. -> -1
+
+LINE 4
+SAY Done. Give me a moment.
+NEXT 5
+GIVES finish quest
+
+LINE 5
+SAY There. It will take a hit for you.
+NEXT -1
+GIVES give shield
+
+LINE 6
+SAY The shield is holding up, I hope?
+NEXT -1

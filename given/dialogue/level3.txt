@@ -1,0 +1,44 @@
+// GIVEN. The conversation on level 3. Do not edit. Yours is my/dialogue.txt, and it uses the same format.
+
+NAME Ghost
+BOSS Warden
+QUEST boss
+START 0 3 4 7
+
+LINE 0
+SAY The Warden locked me in here. While it lives, the door stays shut.
+A I will deal with it. -> 1
+B How do I beat it? -> 2
+
+LINE 1
+SAY Then go. Come back when it is over.
+NEXT -1
+GIVES start quest
+
+LINE 2
+SAY Hurt it from far away while you can. When it roars, the floor will hurt all of you.
+A I will deal with it. -> 1
+B Maybe later. -> -1
+
+LINE 3
+SAY It still lives. I can hear it.
+NEXT -1
+
+LINE 4
+SAY It is gone. I can feel it. Let me help you, before I go.
+NEXT 5
+GIVES finish quest
+
+LINE 5
+SAY Be well.
+NEXT 6
+GIVES heal party
+
+LINE 6
+SAY And be ready.
+NEXT -1
+GIVES restore mana
+
+LINE 7
+SAY ...
+NEXT -1

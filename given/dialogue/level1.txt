@@ -1,0 +1,38 @@
+// GIVEN. The conversation on level 1. Do not edit. Yours is my/dialogue.txt, and it uses the same format.
+
+NAME Guide
+BOSS Warden
+QUEST none
+START 0 0 0 6
+
+LINE 0
+SAY You are new down here. Want some advice?
+A Yes, please. -> 1
+B I will manage. -> 5
+
+LINE 1
+SAY Do not let them touch you. An arrow flies 6 squares, and a monster you shoot cannot hit back.
+A What about magic? -> 2
+B Thanks. -> 3
+
+LINE 2
+SAY A spark costs 2 mana and goes straight through armor. Mana comes back slowly. The controls list has the keys.
+NEXT 3
+
+LINE 3
+SAY Take these. You will need them.
+NEXT 4
+GIVES give arrows
+
+LINE 4
+SAY Off you go.
+NEXT -1
+GIVES finish quest
+
+LINE 5
+SAY Suit yourself. The offer stands.
+NEXT -1
+
+LINE 6
+SAY Still alive? Good. Keep moving.
+NEXT -1
