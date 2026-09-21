@@ -1,0 +1,35 @@
+// my/dialogue.txt: THIS FILE IS YOURS. It is what the N on YOUR level says.
+//
+// NAME   who they are                      BOSS   what the B on your level is called
+// QUEST  none, gold, boss or monsters      what your quest needs before it can be finished:
+//            gold = 3 gold      boss = the B beaten      monsters = every monster on the level beaten
+// START  four line numbers: where the talk opens when the quest is
+//            not started,  started but not ready,  ready to finish,  done
+//
+// Then the lines, numbered 0, 1, 2 with no gaps. Each one is:
+//     LINE 0
+//     SAY what they say
+//     A the first answer -> the line it leads to          (-1 ends the talk)
+//     B the second answer -> the line it leads to         (B is optional)
+//     GIVES what happens when this line is reached        (optional)
+// A line with nothing to choose has NEXT in place of A and B, and must lead forwards or to -1:
+//     NEXT 3
+//
+// What a line can give:
+//     give potion   give arrows   give stones   give shield   give gold
+//     heal party   restore mana   power might   power guard   power regen
+//     start quest   finish quest
+
+NAME Stranger
+BOSS Dragon
+QUEST none
+START 0 0 0 0
+
+LINE 0
+SAY Hello. I did not expect anyone.
+A Who are you? -> 1
+B Goodbye. -> -1
+
+LINE 1
+SAY Nobody yet. Somebody has to write my lines.
+NEXT -1

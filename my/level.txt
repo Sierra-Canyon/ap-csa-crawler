@@ -1,0 +1,13 @@
+// my/level.txt: THIS FILE IS YOURS. It is the last level of the game.
+//
+// One line of text for each row. The contracts:
+//   - every row the same length, with walls all the way around
+//   - only these nine tiles:   # wall   . floor   @ start   M monster   $ loot   + door
+//                              N someone to talk to   * a powerup   B the boss (one at most)
+//   - exactly one @, and at least one +
+//
+// Play it:   bash scripts/play.sh 4        (or   bash scripts/play.sh --text 4)
+
+########
+#@.M.$+#
+########

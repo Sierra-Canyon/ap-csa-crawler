@@ -1,0 +1,9 @@
+// my/spell.txt: THIS FILE IS YOURS. Your spell is a bolt in a straight line, like spark.
+// COST is 1 to 6 mana. NEAR is the damage within 2 squares. FAR is the damage beyond that.
+// A spell is fair when neither number is more than COST * 3.
+// The spell book holds four spells: the game's three and yours. Keys 1 to 4 cast them.
+
+NAME zap
+COST 2
+NEAR 3
+FAR 3
