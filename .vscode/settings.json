@@ -1,5 +1,7 @@
 {
   "java.project.sourcePaths": ["src", "tests", "tools"],
   "java.project.referencedLibraries": ["given/*.jar"],
-  "java.project.outputPath": "out"
+  "java.project.outputPath": "out",
+  "java.settings.url": ".settings/org.eclipse.jdt.core.prefs",
+  "problems.showCurrentInStatus": true
 }
