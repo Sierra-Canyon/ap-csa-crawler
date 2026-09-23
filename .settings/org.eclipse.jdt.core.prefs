@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
 # Quiet two warnings the Java extension raises on every quest stub, so the Problems panel shows real mistakes.
-# "Resource leak: 'in' is never closed" (a Scanner on System.in is never closed in this course)
+# "Resource leak: 'scanner' is never closed" (a Scanner on System.in is never closed in this course)
 org.eclipse.jdt.core.compiler.problem.unclosedCloseable=ignore
 org.eclipse.jdt.core.compiler.problem.potentiallyUnclosedCloseable=ignore
 org.eclipse.jdt.core.compiler.problem.explicitlyClosedAutoCloseable=ignore
