@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
- * Quest 2 challenge: Two Ways to Make a Spell.   specs/quest-02-meet-the-party.md, second page
+ * Quest 2 challenge: Two Ways to Make a Spell.   The printed sheet has the rules and the cases.
  * NOT STARTED YET   (delete this line when you begin; the checker skips this file while it is here)
  */
 public class Quest02Challenge {

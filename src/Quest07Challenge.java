@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
- * Quest 7 challenge: What Is in the Chest.   specs/quest-07-first-encounter.md, second page
+ * Quest 7 challenge: What Is in the Chest.   The printed sheet has the rules and the cases.
  * NOT STARTED YET   (delete this line when you begin; the checker skips this file while it is here)
  */
 public class Quest07Challenge {

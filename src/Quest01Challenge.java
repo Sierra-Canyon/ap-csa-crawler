@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
- * Quest 1 challenge: Any Dice.   specs/quest-01-roll-for-damage.md, second page
+ * Quest 1 challenge: Any Dice.   The printed sheet has the rules and the cases.
  * NOT STARTED YET   (delete this line when you begin; the checker skips this file while it is here)
  */
 public class Quest01Challenge {

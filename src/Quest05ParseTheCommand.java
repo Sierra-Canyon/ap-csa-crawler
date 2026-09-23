@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
- * Quest 5: Parse the Command.   specs/quest-05-parse-the-command.md
+ * Quest 5: Parse the Command.   The printed sheet has the rules and the cases.
  * NOT STARTED YET   (delete this line when you begin; the checker skips this file while it is here)
  */
 public class Quest05ParseTheCommand {

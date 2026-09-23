@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
- * Quest 11 challenge: Drink at Three.   specs/quest-11-battle-loop.md, second page
+ * Quest 11 challenge: Drink at Three.   The printed sheet has the rules and the cases.
  * NOT STARTED YET   (delete this line when you begin; the checker skips this file while it is here)
  */
 public class Quest11Challenge {

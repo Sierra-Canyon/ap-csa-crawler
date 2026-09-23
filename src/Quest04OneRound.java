@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
- * Quest 4: One Round.   specs/quest-04-one-round.md
+ * Quest 4: One Round.   The printed sheet has the rules and the cases.
  * NOT STARTED YET   (delete this line when you begin; the checker skips this file while it is here)
  */
 public class Quest04OneRound {

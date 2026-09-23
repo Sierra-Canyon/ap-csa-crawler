@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
- * Quest 15 challenge: Nearest in the Row.   specs/quest-15-read-the-map.md, second page
+ * Quest 15 challenge: Nearest in the Row.   The printed sheet has the rules and the cases.
  * NOT STARTED YET   (delete this line when you begin; the checker skips this file while it is here)
  */
 public class Quest15Challenge {

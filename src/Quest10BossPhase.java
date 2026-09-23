@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
- * Quest 10: Boss Phase.   specs/quest-10-boss-phase.md
+ * Quest 10: Boss Phase.   The printed sheet has the rules and the cases.
  * NOT STARTED YET   (delete this line when you begin; the checker skips this file while it is here)
  */
 public class Quest10BossPhase {

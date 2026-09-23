@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
- * Quest 7: First Encounter.   specs/quest-07-first-encounter.md
+ * Quest 7: First Encounter.   The printed sheet has the rules and the cases.
  * NOT STARTED YET   (delete this line when you begin; the checker skips this file while it is here)
  */
 public class Quest07FirstEncounter {
@@ -11,7 +11,7 @@ public class Quest07FirstEncounter {
         String heroName = in.nextLine();
         System.out.print("Hero attack: ");
         int attack = in.nextInt();
-        in.nextLine();
+        in.nextLine();   // eats the end of the attack line, so the next nextLine gets the name
         System.out.print("Monster name: ");
         String monsterName = in.nextLine();
         System.out.print("Monster health: ");

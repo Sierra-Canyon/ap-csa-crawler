@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
- * Quest 11: Battle Loop.   specs/quest-11-battle-loop.md
+ * Quest 11: Battle Loop.   The printed sheet has the rules and the cases.
  * NOT STARTED YET   (delete this line when you begin; the checker skips this file while it is here)
  */
 public class Quest11BattleLoop {
