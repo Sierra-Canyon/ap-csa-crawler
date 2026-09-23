@@ -23,7 +23,6 @@ conversation, `1` and `2` pick an answer and Enter moves on.
 | Folder | What it is | Do you edit it? |
 |---|---|---|
 | **`src/`** | Your programs. One file per quest, one per challenge, one for the project. | **Yes** |
-| **`specs/`** | The page for each quest. It says what goes in, what comes out, and the cases the checker uses. | No |
 | **`given/`** | The game's classes, packed in `crawler.jar`, the three levels, and **`API.md`**, the list of every method you may call. | No |
 | **`my/`** | Four text files: your character, your spell, your level, your conversation. | Yes, whenever you like |
 | **`assets/`** | The pictures and sounds. Replace any of them with a file of the same name. | Yes, whenever you like |
@@ -32,7 +31,7 @@ conversation, `1` and `2` pick an answer and Enter moves on.
 
 ## Doing a quest
 
-1. Read the page in `specs/`. The table of cases on it is exactly what the checker runs.
+1. Read the printed sheet. The table of cases on it is exactly what the checker runs.
 2. Open the file in `src/` with the same number. Delete the line that says `NOT STARTED YET`.
 3. Write your program inside `main`.
 4. Run it yourself and type the input: `bash scripts/run.sh Quest05ParseTheCommand`
