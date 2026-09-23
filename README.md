@@ -78,7 +78,7 @@ from is.** Every picture, song and chatbot you used goes in `CREDITS.md`.
 **It does not compile.** Read the first error. It names a file and a line number. The errors after
 it are usually consequences of the first.
 
-**The checker says your program asked for more input than the test provided.** Count your `in.next`
+**The checker says your program asked for more input than the test provided.** Count your `scanner.next`
 calls against the Input section of the spec. In a loop that reads until `quit`, check how you
 compare the command with `"quit"`.
 
