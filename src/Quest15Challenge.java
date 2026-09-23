@@ -6,6 +6,6 @@ import java.util.Scanner;
  */
 public class Quest15Challenge {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
     }
 }

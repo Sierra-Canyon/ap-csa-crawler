@@ -6,15 +6,15 @@ import java.util.Scanner;
  */
 public class Quest03TwoNamesOneMonster {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Monster name: ");
-        String name = in.next();
+        String name = scanner.next();
         System.out.print("Monster health: ");
-        int health = in.nextInt();
+        int health = scanner.nextInt();
         System.out.print("Hit one: ");
-        int hitOne = in.nextInt();
+        int hitOne = scanner.nextInt();
         System.out.print("Hit two: ");
-        int hitTwo = in.nextInt();
+        int hitTwo = scanner.nextInt();
 
         // Yours starts here. The input has been read into the variables above.
     }

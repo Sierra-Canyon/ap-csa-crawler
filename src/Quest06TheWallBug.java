@@ -6,15 +6,15 @@ import java.util.Scanner;
  */
 public class Quest06TheWallBug {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Level row: ");
-        String row = in.next();
+        String row = scanner.next();
         System.out.print("Column: ");
-        int column = in.nextInt();
+        int column = scanner.nextInt();
         System.out.print("One name: ");
-        String nameOne = in.next();
+        String nameOne = scanner.next();
         System.out.print("Another name: ");
-        String nameTwo = in.next();
+        String nameTwo = scanner.next();
 
         // Yours starts here. The input has been read into the variables above.
     }

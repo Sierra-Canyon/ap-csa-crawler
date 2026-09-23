@@ -6,13 +6,13 @@ import java.util.Scanner;
  */
 public class Quest08CanICast {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Spell: ");
-        String name = in.next();
+        String name = scanner.next();
         System.out.print("Mana: ");
-        int mana = in.nextInt();
+        int mana = scanner.nextInt();
         System.out.print("Distance: ");
-        int distance = in.nextInt();
+        int distance = scanner.nextInt();
 
         Spell spell = null;
         if (name.equals("spark")) {

@@ -6,21 +6,21 @@ import java.util.Scanner;
  */
 public class Quest04OneRound {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Hero name: ");
-        String heroName = in.next();
+        String heroName = scanner.next();
         System.out.print("Hero health: ");
-        int heroHealth = in.nextInt();
+        int heroHealth = scanner.nextInt();
         System.out.print("Hero attack: ");
-        int heroAttack = in.nextInt();
+        int heroAttack = scanner.nextInt();
         System.out.print("Monster name: ");
-        String monsterName = in.next();
+        String monsterName = scanner.next();
         System.out.print("Monster health: ");
-        int monsterHealth = in.nextInt();
+        int monsterHealth = scanner.nextInt();
         System.out.print("Monster attack: ");
-        int monsterAttack = in.nextInt();
+        int monsterAttack = scanner.nextInt();
         System.out.print("Potion: ");
-        int potion = in.nextInt();
+        int potion = scanner.nextInt();
 
         // Yours starts here. The input has been read into the variables above.
     }

@@ -6,15 +6,15 @@ import java.util.Scanner;
  */
 public class Quest11BattleLoop {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Rook health: ");
-        int heroHealth = in.nextInt();
+        int heroHealth = scanner.nextInt();
         System.out.print("Rook attack: ");
-        int heroAttack = in.nextInt();
+        int heroAttack = scanner.nextInt();
         System.out.print("Grub health: ");
-        int monsterHealth = in.nextInt();
+        int monsterHealth = scanner.nextInt();
         System.out.print("Grub attack: ");
-        int monsterAttack = in.nextInt();
+        int monsterAttack = scanner.nextInt();
 
         // Yours starts here. The input has been read into the variables above.
     }

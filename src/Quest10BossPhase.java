@@ -6,15 +6,15 @@ import java.util.Scanner;
  */
 public class Quest10BossPhase {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Boss health: ");
-        int health = in.nextInt();
+        int health = scanner.nextInt();
         System.out.print("Boss full health: ");
-        int fullHealth = in.nextInt();
+        int fullHealth = scanner.nextInt();
         System.out.print("Hero attack: ");
-        int heroAttack = in.nextInt();
+        int heroAttack = scanner.nextInt();
         System.out.print("Boss attack: ");
-        int bossAttack = in.nextInt();
+        int bossAttack = scanner.nextInt();
 
         // Yours starts here. The input has been read into the variables above.
     }

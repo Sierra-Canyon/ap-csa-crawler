@@ -6,18 +6,18 @@ import java.util.Scanner;
  */
 public class Quest07FirstEncounter {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Hero name: ");
-        String heroName = in.nextLine();
+        String heroName = scanner.nextLine();
         System.out.print("Hero attack: ");
-        int attack = in.nextInt();
-        in.nextLine();   // eats the end of the attack line, so the next nextLine gets the name
+        int attack = scanner.nextInt();
+        scanner.nextLine();   // eats the end of the attack line, so the next nextLine gets the name
         System.out.print("Monster name: ");
-        String monsterName = in.nextLine();
+        String monsterName = scanner.nextLine();
         System.out.print("Monster health: ");
-        int health = in.nextInt();
+        int health = scanner.nextInt();
         System.out.print("Roll: ");
-        int roll = in.nextInt();
+        int roll = scanner.nextInt();
 
         // Yours starts here. The input has been read into the variables above.
     }
