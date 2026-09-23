@@ -1,0 +1,8 @@
+# Scripts and source keep Unix line endings on every OS, so bash on Windows can run them.
+*.sh text eol=lf
+*.java text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.jar binary
+*.png binary
+*.wav binary
