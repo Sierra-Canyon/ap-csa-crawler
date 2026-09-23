@@ -32,7 +32,9 @@ public class Quest01Test {
                     if (roll == null || !roll.matches("[1-6]")) wrong = "one run printed Roll: " + roll;
                     else if (!seen.contains(roll)) seen.add(roll);
                 }
-                if (!wrong.isEmpty()) c.fail("Roll is always from 1 to 6", 1, wrong);
+                if (Cases.uses("Quest01RollForDamage", "Combat.roll")) c.fail("Roll is always from 1 to 6", 1, "Roll must come from Math.random(), not Combat.roll");
+                else if (!Cases.uses("Quest01RollForDamage", "Math.random")) c.fail("Roll is always from 1 to 6", 1, "Roll must come from Math.random()");
+                else if (!wrong.isEmpty()) c.fail("Roll is always from 1 to 6", 1, wrong);
                 else c.isTrue("Roll is always from 1 to 6", 1, seen.size() >= 3, "40 runs only ever rolled " + seen);
             } catch (Harness.NotRunnable e) {
                 c.fail("Roll is always from 1 to 6", 1, e.getMessage());
