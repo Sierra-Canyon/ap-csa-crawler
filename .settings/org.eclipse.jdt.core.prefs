@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+# Quiet two warnings the Java extension raises on every quest stub, so the Problems panel shows real mistakes.
+# "Resource leak: 'in' is never closed" (a Scanner on System.in is never closed in this course)
+org.eclipse.jdt.core.compiler.problem.unclosedCloseable=ignore
+org.eclipse.jdt.core.compiler.problem.potentiallyUnclosedCloseable=ignore
+org.eclipse.jdt.core.compiler.problem.explicitlyClosedAutoCloseable=ignore
+# "The value of the local variable x is not used" (every stub that reads its input trips this until the quest is written)
+org.eclipse.jdt.core.compiler.problem.unusedLocal=ignore
