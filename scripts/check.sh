@@ -3,6 +3,8 @@
 #   bash scripts/check.sh            everything
 #   bash scripts/check.sh Quest01    just one quest
 cd "$(dirname "$0")/.."
+# Windows (Git Bash) separates classpath entries with ; and everything else with :
+case "$(uname -s)" in MINGW*|MSYS*|CYGWIN*) S=";" ;; *) S=":" ;; esac
 rm -rf out
 mkdir -p out
 echo "Compiling..."
@@ -16,8 +18,8 @@ if ! javac -g -cp given/crawler.jar -d out $(find src tools tests -name '*.java'
 fi
 echo "Compiles."
 echo
-java -cp out:given/crawler.jar RunAll "$@"
+java -cp "out${S}given/crawler.jar" RunAll "$@"
 GRADE=$?
 echo
-java -cp out:given/crawler.jar ApSubset src
+java -cp "out${S}given/crawler.jar" ApSubset src
 exit $GRADE
