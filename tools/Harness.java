@@ -25,7 +25,9 @@ public class Harness {
         public NotRunnable(String m) { super(m); }
     }
 
-    private static final int TIMEOUT_SECONDS = 10;
+    // Ten seconds a program, except under the VS Code debugger, where a breakpoint can be held as long as you like.
+    private static final int TIMEOUT_SECONDS = java.lang.management.ManagementFactory.getRuntimeMXBean()
+            .getInputArguments().stream().anyMatch(a -> a.contains("jdwp")) ? 24 * 60 * 60 : 10;
     private static final int LIMIT = 1_000_000;
 
     /** True when the source file still carries the stub marker. */
