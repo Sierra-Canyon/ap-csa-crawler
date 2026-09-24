@@ -58,6 +58,31 @@ you on the exam in May.
 **The second page of every spec is a challenge with hints.** Read one hint, try again, and read the
 next only if you are still stuck.
 
+## Updating from the template
+
+When the template gets a fix, it does not reach your repository by itself. The one-page sheet "Updating from the template" has the commands; here they are again. Every command runs in a terminal inside your repository folder.
+
+Once, the first time only (with nothing uncommitted):
+
+```
+git remote add template https://github.com/Sierra-Canyon/ap-csa-crawler.git
+git fetch template --tags
+git checkout main
+git merge -s ours --allow-unrelated-histories -m "Link template history" baseline
+git push
+```
+
+Every time there is an update (with nothing uncommitted):
+
+```
+git checkout main
+git pull --no-rebase template main
+git push
+git checkout development
+git merge main
+git push
+```
+
 ## Making the game yours
 
 Nothing in `my/` or `assets/` is graded. The four files in `my/` explain themselves at the top.
