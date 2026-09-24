@@ -53,6 +53,8 @@ printed. `TRY` is the same thing on a challenge, which is extra and not graded. 
 started. After the checks comes the AP subset scan: Java that works and will not be available to
 you on the exam in May.
 
+**The debugger, from Fri 9/25.** Open VS Code on this folder, with the Java Extension Pack installed. Click in the margin to the left of a line number so a red dot appears, then press **F5** and pick **Run this file**, **Check one quest** (it asks for a quest name, such as `Quest04`), or **Play the game**. The program stops before the red dot, with the line in yellow; the **Variables** pane on the left shows what every variable holds, and two names for one object show the same id. **F10** runs one line, **F11** steps into a method call, **Shift+F11** steps back out, **F5** continues, **Shift+F5** stops. Every spec has a line that starts "Stuck on a row?" that says where the red dot goes.
+
 **The second page of every spec is a challenge with hints.** Read one hint, try again, and read the
 next only if you are still stuck.
 
