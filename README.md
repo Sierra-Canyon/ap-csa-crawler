@@ -29,16 +29,18 @@ conversation, `1` and `2` pick an answer and Enter moves on.
 | **`tests/`** and **`tools/`** | The checker. | No |
 | **`CREDITS.md`** | Where your art and music came from, and any help you had. | Yes |
 
-## Two branches, all semester
+## Branches and pull requests
 
-`main` is the template's copy. You never edit it; it only receives updates (see "Updating from the template" below). Everything you write goes on one branch, `development`, for every quest and the project. Once, at the start:
+Every unit of the semester gets a branch, and the unit ends with a pull request that merges it into `main`. `main` is never edited directly: it receives your pull requests and the template's updates.
 
-```
-git switch -c development
-git push -u origin development
-```
+| Branch | What goes on it | Pull request into `main` |
+|---|---|---|
+| `objects` | Quests 1 to 6 | Thu 10/1, after Quest 6 |
+| `decisions` | Quests 7 to 10 | Tue 10/13, after Quest 10 |
+| `loops` | Quests 11 to 17 | Tue 11/10, after Quest 17 |
+| `project` | Dungeon in One Main | when the project is due |
 
-If you already made a `quest01` branch, `git checkout quest01`, then `git switch -c development`, then `git push -u origin development`, and keep working on `development`. There is no branch per quest.
+Once, on the Quest 3 day: `git switch -c objects` (from `quest01` or whatever branch you are on, so your first quests come along), then `git push -u origin objects`. The pull request steps are on the spec of each unit's last quest and on the one-page sheet "Branches and pull requests".
 
 ## Doing a quest
 
@@ -90,7 +92,7 @@ git checkout main
 git fetch template
 git merge template/main
 git push
-git checkout development
+git checkout <the branch you are on>
 git merge main
 git push
 ```
