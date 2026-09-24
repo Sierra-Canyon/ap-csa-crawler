@@ -29,6 +29,17 @@ conversation, `1` and `2` pick an answer and Enter moves on.
 | **`tests/`** and **`tools/`** | The checker. | No |
 | **`CREDITS.md`** | Where your art and music came from, and any help you had. | Yes |
 
+## Two branches, all semester
+
+`main` is the template's copy. You never edit it; it only receives updates (see "Updating from the template" below). Everything you write goes on one branch, `development`, for every quest and the project. Once, at the start:
+
+```
+git switch -c development
+git push -u origin development
+```
+
+If you already made a `quest01` branch, `git checkout quest01`, then `git switch -c development`, then `git push -u origin development`, and keep working on `development`. There is no branch per quest.
+
 ## Doing a quest
 
 1. Read the printed sheet. The table of cases on it is exactly what the checker runs.
@@ -76,7 +87,8 @@ Every time there is an update (with nothing uncommitted):
 
 ```
 git checkout main
-git pull --no-rebase template main
+git fetch template
+git merge template/main
 git push
 git checkout development
 git merge main
