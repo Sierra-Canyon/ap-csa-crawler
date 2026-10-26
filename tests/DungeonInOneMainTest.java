@@ -2,7 +2,7 @@
 public class DungeonInOneMainTest {
     public static void run(Check c) {
         c.begin("Project: Dungeon in One Main");
-        if (Harness.isStub("DungeonInOneMain")) { c.skip("all checks", 40, "not started"); return; }
+        if (Harness.isStub("DungeonInOneMain")) { c.skip("all checks", 45, "not started"); return; }
         String[] labels = { "Result:", "Gold:", "Health left:", "Steps:", "Monsters left:", "Hero at:", "Final map:*" };
         int[] points = { 5, 5, 5, 5, 5, 5, 5, 5 };
         String[][] names = {
@@ -36,6 +36,7 @@ public class DungeonInOneMainTest {
             { "won", "1", "6", "13", "0", "3,8", "########## | #....#...# | #.##.#.#.# | #......#@# | ##########" },
         };
         Cases.run(c, "DungeonInOneMain", labels, points, names, inputs, expected);
+        YoursCheck.project(c, "DungeonInOneMain", "Yours: your dungeon, my/dungeon.txt", 5);
 
         c.begin("Project extra: the f command");
         String probe = "";

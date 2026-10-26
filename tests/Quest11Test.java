@@ -2,7 +2,7 @@
 public class Quest11Test {
     public static void run(Check c) {
         c.begin("Quest 11: Battle Loop");
-        if (Harness.isStub("Quest11BattleLoop")) { c.skip("all checks", 5, "not started"); } else {
+        if (Harness.isStub("Quest11BattleLoop")) { c.skip("all checks", 7, "not started"); } else {
             String[] labels = { "Rounds:", "Winner:", "Rook now:", "Grub now:" };
             int[] points = { 1, 1, 1, 1, 1 };
             String[][] names = {
@@ -27,6 +27,7 @@ public class Quest11Test {
                 { "3", "Rook", "8", "0" },
             };
             Cases.run(c, "Quest11BattleLoop", labels, points, names, inputs, expected);
+            YoursCheck.quest11(c, "Quest11BattleLoop", inputs, expected, new String[] { "Yours: Your monster: is a new name, a health from 2 to 12, and an attack from 1 to 4, the same in every case", "Yours: one Round: line for each round, each with its round number" });
         }
         c.begin("Quest 11 challenge: Drink at Three");
         if (Harness.isStub("Quest11Challenge")) { c.skip("all checks", 0, "not started"); } else {

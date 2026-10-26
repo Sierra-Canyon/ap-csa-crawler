@@ -2,7 +2,7 @@
 public class Quest15Test {
     public static void run(Check c) {
         c.begin("Quest 15: Read the Map");
-        if (Harness.isStub("Quest15ReadTheMap")) { c.skip("all checks", 4, "not started"); } else {
+        if (Harness.isStub("Quest15ReadTheMap")) { c.skip("all checks", 6, "not started"); } else {
             String[] labels = { "Gold:", "Monsters:", "Hero row:", "Hero col:" };
             int[] points = { 1, 1, 1, 1 };
             String[][] names = {
@@ -24,6 +24,7 @@ public class Quest15Test {
                 { "4", "5", "1", "1" },
             };
             Cases.run(c, "Quest15ReadTheMap", labels, points, names, inputs, expected);
+            YoursCheck.quest15(c, "Quest15ReadTheMap", inputs, expected, new String[] { "Yours: my/level.txt is your own design: at least 8 by 5, edged with walls, with at least 2 M and 2 $", "Yours: your program reads your level right: all four lines" });
         }
         c.begin("Quest 15 challenge: Nearest in the Row");
         if (Harness.isStub("Quest15Challenge")) { c.skip("all checks", 0, "not started"); } else {

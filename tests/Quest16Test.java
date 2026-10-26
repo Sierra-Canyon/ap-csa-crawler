@@ -2,7 +2,7 @@
 public class Quest16Test {
     public static void run(Check c) {
         c.begin("Quest 16: Line of Fire");
-        if (Harness.isStub("Quest16LineOfFire")) { c.skip("all checks", 9, "not started"); } else {
+        if (Harness.isStub("Quest16LineOfFire")) { c.skip("all checks", 11, "not started"); } else {
             String[] labels = { "Shot:", "Stopped at:" };
             int[] points = { 1, 1, 1, 1, 1, 1, 1, 1 };
             String[][] names = {
@@ -37,6 +37,7 @@ public class Quest16Test {
             };
             Cases.run(c, "Quest16LineOfFire", labels, points, names, inputs, expected);
             c.isTrue("no break", 1, !Cases.uses("Quest16LineOfFire", "break;"), "the file uses break");
+            YoursCheck.quest16(c, "Quest16LineOfFire", inputs, expected, new String[] { "Yours: every case has a Says: line, with the column when the shot stopped", "Yours: three different sayings, one for each kind of shot" });
         }
         c.begin("Quest 16 challenge: Either Way");
         if (Harness.isStub("Quest16Challenge")) { c.skip("all checks", 0, "not started"); } else {

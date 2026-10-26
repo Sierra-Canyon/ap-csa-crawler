@@ -1,0 +1,20 @@
+// my/dungeon.txt: THIS FILE IS YOURS. It is the dungeon for your project, Dungeon in One Main.
+//
+// The rules (the project sheet has them too):
+//   - one line of text for each row, every row the same length, at least 8 wide and 5 tall
+//   - only the project's six tiles:   # wall   . floor   @ the hero   M monster   $ gold   + door
+//   - a wall or a door on every square of the edge, exactly one @, at least 2 M, at least 2 $, and at least one +
+//   - HEALTH is the hero's health, from 1 to 20
+//   - WALK is the commands that win your dungeon, with a space between them
+//
+// The one below is too small to count. Make it yours.
+//
+// Play it in your own program:   bash scripts/dungeon.sh          (you type the commands)
+//                                bash scripts/dungeon.sh walk     (it plays your WALK)
+// Check it:                      bash scripts/check.sh Project
+
+HEALTH 10
+WALK d d d d
+######
+#@.M+#
+######

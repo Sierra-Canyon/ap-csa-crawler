@@ -24,7 +24,7 @@ conversation, `1` and `2` pick an answer and Enter moves on.
 |---|---|---|
 | **`src/`** | Your programs. One file per quest, one per challenge, one for the project. | **Yes** |
 | **`given/`** | The game's classes, packed in `crawler.jar`, the three levels, and **`API.md`**, the list of every method you may call. | No |
-| **`my/`** | Four text files: your character, your spell, your level, your conversation. | Yes, whenever you like |
+| **`my/`** | Five text files: your character, your spell, your level, your conversation, and your project's dungeon. | Yes, whenever you like |
 | **`assets/`** | The pictures and sounds. Replace any of them with a file of the same name. | Yes, whenever you like |
 | **`tests/`** and **`tools/`** | The checker. | No |
 | **`CREDITS.md`** | Where your art and music came from, and any help you had. | Yes |
@@ -53,7 +53,7 @@ Once, on the Quest 3 day: `git switch -c objects` (from `quest01` or whatever br
 
 `bash scripts/check.sh` with no quest named checks everything you have started.
 
-**The checker reads labelled lines.** A quest says which labels to print, such as `Damage:`. The
+**The checker reads labeled lines.** A quest says which labels to print, such as `Damage:`. The
 checker finds the label and reads what follows it on that line. Spelling, capitals and the colon
 all count. You may print anything else you like, prompts included. If a label appears more than
 once, the last one is the one the checker reads, so print your answers last. The exception is a
@@ -99,9 +99,18 @@ git push
 
 ## Making the game yours
 
-Nothing in `my/` or `assets/` is graded. The four files in `my/` explain themselves at the top.
-The game checks them when it starts and tells you in plain words what is wrong: a level with no
+From Quest 11, every quest has a **Yours** part on the back of its sheet: your own monster, your own
+bar, your own verdict, and so on, in the same program. Its rows are graded like the others, and they
+check the shape of what you write, never your words. Then the game uses it: run `bash scripts/play.sh --text`
+and your monster walks the dungeon, your bar draws the party's health, your Quest 13 judges each level.
+If one of your quests crashes or prints the wrong thing, the game says so once and uses its own version.
+
+The files in `my/` explain themselves at the top. Two of them are graded: `my/level.txt` in Quest 15's
+Yours rows, and `my/dungeon.txt` in the project's. The others, and everything in `assets/`, are not.
+The game checks the files when it starts and tells you in plain words what is wrong: a level with no
 door, a character that is too strong, a conversation line that leads nowhere.
+
+`bash scripts/dungeon.sh` runs your project on the dungeon in `my/dungeon.txt`.
 
 ## Help, and what kind
 

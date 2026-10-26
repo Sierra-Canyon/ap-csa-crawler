@@ -2,7 +2,7 @@
 public class Quest13Test {
     public static void run(Check c) {
         c.begin("Quest 13: Battle Report");
-        if (Harness.isStub("Quest13BattleReport")) { c.skip("all checks", 4, "not started"); } else {
+        if (Harness.isStub("Quest13BattleReport")) { c.skip("all checks", 6, "not started"); } else {
             String[] labels = { "Hits:", "Total:", "Biggest:", "Average:~" };
             int[] points = { 1, 1, 1, 1 };
             String[][] names = {
@@ -24,6 +24,7 @@ public class Quest13Test {
                 { "3", "11", "9", "3.67" },
             };
             Cases.run(c, "Quest13BattleReport", labels, points, names, inputs, expected);
+            YoursCheck.quest13(c, "Quest13BattleReport", inputs, expected, new String[] { "Yours: every case prints a Verdict: that includes its number of hits", "Yours: at least three verdicts, each covering one range of averages" });
         }
         c.begin("Quest 13 challenge: The Weakest Hit");
         if (Harness.isStub("Quest13Challenge")) { c.skip("all checks", 0, "not started"); } else {

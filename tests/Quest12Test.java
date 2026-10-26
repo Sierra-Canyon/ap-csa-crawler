@@ -2,7 +2,7 @@
 public class Quest12Test {
     public static void run(Check c) {
         c.begin("Quest 12: Health Bar");
-        if (Harness.isStub("Quest12HealthBar")) { c.skip("all checks", 5, "not started"); } else {
+        if (Harness.isStub("Quest12HealthBar")) { c.skip("all checks", 7, "not started"); } else {
             String[] labels = { "Bar:", "Percent:" };
             int[] points = { 1, 1, 1, 1, 1 };
             String[][] names = {
@@ -27,6 +27,7 @@ public class Quest12Test {
                 { "[#######.]", "87" },
             };
             Cases.run(c, "Quest12HealthBar", labels, points, names, inputs, expected);
+            YoursCheck.quest12(c, "Quest12HealthBar", inputs, expected, new String[] { "Yours: Your bar: follows your design in every case: your ends, then one of your characters per point", "Yours: your two point characters are different, and neither is # or ." });
         }
         c.begin("Quest 12 challenge: Boss Bar");
         if (Harness.isStub("Quest12Challenge")) { c.skip("all checks", 0, "not started"); } else {

@@ -2,7 +2,7 @@
 public class Quest17Test {
     public static void run(Check c) {
         c.begin("Quest 17: Draw the Map");
-        if (Harness.isStub("Quest17DrawTheMap")) { c.skip("all checks", 4, "not started"); } else {
+        if (Harness.isStub("Quest17DrawTheMap")) { c.skip("all checks", 6, "not started"); } else {
             String[] labels = { "Size:", "Drawn:*" };
             int[] points = { 1, 1, 1, 1 };
             String[][] names = {
@@ -24,6 +24,7 @@ public class Quest17Test {
                 { "11 by 20", "# # # # # # # # # # # # # # # # # # # # | # @ . . . . . # $ . . M . . . . . . . # | # . # # # # . # . # # # # # # # # # . # | # . # $ N # . # . # . . * . . . . # . # | # . # . . M . # . # . # # # # # . # . # | # . # # # # . # . # . # + B . # . # . # | # . . . . . . # . # . # # M . # . # . # | # . # # # # # # . # . . . $ . # . # . # | # . # $ . . M . . # # # # # # # . # . # | # . . . # . . . . . . . . . . . . M . # | # # # # # # # # # # # # # # # # # # # #" },
             };
             Cases.run(c, "Quest17DrawTheMap", labels, points, names, inputs, expected);
+            YoursCheck.quest17(c, "Quest17DrawTheMap", inputs, expected, new String[] { "Yours: one Art: line per row, every tile with its own character", "Yours: the wall is not drawn as #, and the floor not as ." });
         }
         c.begin("Quest 17 challenge: Fog");
         if (Harness.isStub("Quest17Challenge")) { c.skip("all checks", 0, "not started"); } else {

@@ -2,7 +2,7 @@
 public class Quest14Test {
     public static void run(Check c) {
         c.begin("Quest 14: Mana and Turns");
-        if (Harness.isStub("Quest14ManaAndTurns")) { c.skip("all checks", 7, "not started"); } else {
+        if (Harness.isStub("Quest14ManaAndTurns")) { c.skip("all checks", 9, "not started"); } else {
             String[] labels = { "Turns:", "Casts:", "Refused:", "Mana left:" };
             int[] points = { 1, 1, 1, 1, 1, 1, 1 };
             String[][] names = {
@@ -33,6 +33,7 @@ public class Quest14Test {
                 { "4", "1", "0", "5" },
             };
             Cases.run(c, "Quest14ManaAndTurns", labels, points, names, inputs, expected);
+            YoursCheck.quest14(c, "Quest14ManaAndTurns", inputs, expected, new String[] { "Yours: Your command: is a new word the game does not use, and a gain from 1 to 3", "Yours: four runs that use your word give the right Turns, Mana left, and Casts" });
         }
         c.begin("Quest 14 challenge: The Longest Rest");
         if (Harness.isStub("Quest14Challenge")) { c.skip("all checks", 0, "not started"); } else {
