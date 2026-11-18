@@ -7,6 +7,7 @@ import java.util.List;
  *
  *     java -cp out RunAll              everything
  *     java -cp out RunAll Quest07      just that one
+ *     java -cp out RunAll Step3        one step of the project build guide (never run by the plain command)
  */
 public class RunAll {
 
@@ -29,6 +30,15 @@ public class RunAll {
         {"Quest16", "Quest16Test"},
         {"Quest17", "Quest17Test"},
         {"Project", "DungeonInOneMainTest"},
+        {"Step1", "DungeonStep1Test"},
+        {"Step2", "DungeonStep2Test"},
+        {"Step3", "DungeonStep3Test"},
+        {"Step4", "DungeonStep4Test"},
+        {"Step5", "DungeonStep5Test"},
+        {"Step6", "DungeonStep6Test"},
+        {"Step7", "DungeonStep7Test"},
+        {"Step8", "DungeonStep8Test"},
+        {"Step9", "DungeonStep9Test"},
     };
 
     public static void main(String[] args) throws Exception {
@@ -37,6 +47,7 @@ public class RunAll {
 
         for (String[] a : ASSIGNMENTS) {
             if (only != null && !only.equalsIgnoreCase(a[0])) continue;
+            if (only == null && a[0].startsWith("Step")) continue;   // the project build guide's checks run only when named: check.sh Step3
             Class.forName(a[1]).getMethod("run", Check.class).invoke(null, c);
         }
 
